@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-dark-700;
+  }
+  body {
+    @apply bg-gray-50 dark:bg-dark-900 text-gray-900 dark:text-gray-100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .chat-bubble {
+    @apply rounded-lg px-4 py-2 max-w-xs lg:max-w-md break-words;
+  }
+  
+  .chat-bubble-sent {
+    @apply bg-primary-500 text-white ml-auto;
+  }
+  
+  .chat-bubble-received {
+    @apply bg-white dark:bg-dark-700 text-gray-900 dark:text-gray-100;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Custom scrollbar for registration form */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(34 197 94) rgb(243 244 246);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: rgb(243 244 246);
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgb(34 197 94);
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgb(22 163 74);
+  }
+
+  .dark .scrollbar-thin {
+    scrollbar-color: rgb(34 197 94) rgb(31 41 55);
+  }
+
+  .dark .scrollbar-thin::-webkit-scrollbar-track {
+    background: rgb(31 41 55);
+  }
+}
+
