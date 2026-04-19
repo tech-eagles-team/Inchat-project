@@ -1,4 +1,4 @@
-# WhatsApp Clone - Real-time Chat Application
+# Inchat Clone - Real-time Chat Application
 
 A production-ready, full-featured real-time chat application built with React, Node.js, and WebSockets, featuring WhatsApp-style UI and comprehensive messaging capabilities.
 
